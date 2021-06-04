@@ -1,0 +1,21 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package file2;
+
+import java.io.*;
+
+public class File2 {
+  public static void main(String[] args) throws FileNotFoundException, IOException{
+      BufferedReader reader = new BufferedReader(new FileReader("domanda.txt"));
+      for(int i=0; i<36; i++){
+            String domanda = reader.readLine();
+            String area = reader.readLine();
+            System.out.println(domanda); //stringa per domanda
+            System.out.println(area); //stringa per area
+            //line = reader.readLine();
+        }
+    }
+}
